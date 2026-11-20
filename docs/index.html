@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Money</title>
+<meta name="theme-color" content="#f4f4f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Money">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <header class="bar">
+    <h1 id="title">Money</h1>
+    <button id="sync" class="sync" type="button" aria-label="Sync now"></button>
+  </header>
+  <main id="view" class="view" tabindex="-1"></main>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#add" data-view="add"><span class="ico" aria-hidden="true">＋</span>Add</a>
+    <a href="#month" data-view="month"><span class="ico" aria-hidden="true">▤</span>Month</a>
+    <a href="#worth" data-view="worth"><span class="ico" aria-hidden="true">◎</span>Net worth</a>
+    <a href="#settings" data-view="settings"><span class="ico" aria-hidden="true">⚙</span>Settings</a>
+  </nav>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
