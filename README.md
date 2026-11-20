@@ -41,7 +41,7 @@ Open `docs/index.html` with no settings and it runs in **demo mode** (data stays
    cd money-app
    git init && git add . && git commit -m "Money app"
    git branch -M main
-   git remote add origin https://github.com/<your-username>/money.git
+   git remote add origin https://github.com/HebuPatil/money.git
    git push -u origin main
    ```
    (Or on the repo page: "uploading an existing file", and drag in the `docs` and `apps-script` folders.)
